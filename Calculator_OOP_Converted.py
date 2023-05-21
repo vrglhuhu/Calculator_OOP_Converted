@@ -68,6 +68,16 @@ class Calculator:
         except ValueError:
             print("\U0001F6A7 \033[31mINVALID INPUT. Please enter a number.\033[0m")
     # Perform division operation and display the result
-    
+    def division(self):
+        print("\U0001F530 \033[40m\033[35mDIVISION OPERATION\033[0m \U0001F530")
+        try:
+            num1 = float(input("\U0001F4E2 \033[40m\033[34mEnter first number that you want to divide:\033[0m "))
+            num2 = float(input("\U0001F4E2 \033[40m\033[34mEnter second number that you want to divide:\033[0m "))
+            divide = num1 / num2
+            print("\U0001F7E5 TOTAL \U0001F7E5")
+            print(num1, "/", num2, "=", divide)
+        except (ValueError, ZeroDivisionError):
+            print("\U0001F6A7 \033[31mINVALID INPUT. Please enter an integer or a non-zero number.\033[0m")
+
     # Ask the user if they want to perform another calculation
     # Print closing message
