@@ -28,6 +28,10 @@ class Calculator:
         print("\U0001F6D1 \033[34mPress D: \033[0m Division\n")
 
     # Get user's choice of operation
+    def get_user_choice(self):
+        choice = input("\033[40m\033[33mEnter your choice of operation:\033[0m ")
+        return choice.upper()
+    
     # Perform addition operation and display the result
     # Perform subtraction operation and display the result
     # Perform multiplication operation and display the result
