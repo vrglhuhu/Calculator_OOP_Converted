@@ -1,16 +1,17 @@
 # Vergel, Chean Bernard Villanueva
 # Calculator_OOP_Converted
 
+from user_interface import User_interface
 from Calculator_OOP_Converted import Calculator
 from greetings import Greeting
 
 greeting = Greeting()
 calculator = Calculator()
-
+ui = User_interface()
 greeting.print_welcome_message()
 
 while True:
-    choice = calculator.get_user_choice()
+    choice = ui.get_user_choice()
     if choice in calculator.operations:
         if choice.upper() == "A":
            calculator.addition()
@@ -20,7 +21,7 @@ while True:
            calculator.multiplication()
         else:
            calculator.division() 
-        if not calculator.continue_calculation():
+        if not ui.continue_calculation():
             print("\033[32mI hope this program helps and satisfy you.\033[0m")
             break
     else:
