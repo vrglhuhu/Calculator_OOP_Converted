@@ -33,6 +33,17 @@ class Calculator:
         return choice.upper()
     
     # Perform addition operation and display the result
+    def subtraction(self):
+        print("\U0001F530 \033[40m\033[35mSUBTRACTION OPERATION\033[0m \U0001F530")
+        try:
+            num1 = float(input("\U0001F4E2 \033[40m\033[34mEnter first number that you want to subtract:\033[0m "))
+            num2 = float(input("\U0001F4E2 \033[40m\033[34mEnter second number that you want to subtract:\033[0m "))
+            subtract = num1 - num2
+            print("\U0001F7E5 TOTAL \U0001F7E5")
+            print(num1, "-", num2, "=", subtract)
+        except ValueError:
+            print("\U0001F6A7 \033[31mINVALID INPUT. Please enter a number.\033[0m")
+
     # Perform subtraction operation and display the result
     # Perform multiplication operation and display the result
     # Perform division operation and display the result
