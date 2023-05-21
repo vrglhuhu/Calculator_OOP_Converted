@@ -1,7 +1,6 @@
 # Vergel, Chean Bernard Villanueva
 # Calculator_OOP_Converted
 
-
 # Make class for calculator
 class Calculator:
     # Initialize operations dictionary with operation names as keys and corresponding methods as values 
@@ -66,11 +65,11 @@ class Calculator:
         except (ValueError, ZeroDivisionError):
             print("\U0001F6A7 \033[31mINVALID INPUT. Please enter an integer or a non-zero number.\033[0m")
 
+
     # Ask the user if they want to perform another calculation
     def continue_calculation(self):
         next_calculation = input("\U0001F4CC \033[40m\033[33mDo you want to perform another calculation?\033[0m \033[40m\033[34mYES\033[0m or \033[40m\033[34mNO:\033[0m ")
-        if next_calculation.upper() == "YES":
-           return next_calculation
+        return next_calculation
         
 
 
