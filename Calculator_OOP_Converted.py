@@ -1,6 +1,9 @@
 # Vergel, Chean Bernard Villanueva
 # Calculator_OOP_Converted
 
+from greetings import greeting
+greeting = greeting()
+
 # Make class for calculator
 class Calculator:
     # Initialize operations dictionary with operation names as keys and corresponding methods as values 
@@ -69,7 +72,19 @@ class Calculator:
     # Ask the user if they want to perform another calculation
     def continue_calculation(self):
         next_calculation = input("\U0001F4CC \033[40m\033[33mDo you want to perform another calculation?\033[0m \033[40m\033[34mYES\033[0m or \033[40m\033[34mNO:\033[0m ")
-        return next_calculation
+        if next_calculation.upper() == "YES":
+           return next_calculation.upper() == "YES"
+        elif next_calculation.upper() == "NO":
+            greeting.print_goodbye_message()
+        else:
+            print("\U0001F6A7 \033[31mINVALID INPUT. Please enter a number.\033[0m")
+            Calculator.continue_calculation()
+
+
+
+
+
+
         
 
 

@@ -17,15 +17,10 @@ while True:
            calculator.subtraction()  
         elif choice.upper() == "C":
            calculator.multiplication()
-        elif calculator.division() == "D":
-           calculator.division()  
         else:
-            calculator.continue_calculation
-            if calculator.continue_calculation.upper() == "YES":
-                calculator.continue_calculation          
-            else:
-                if not calculator.continue_calculation():
-                  break
+           calculator.division() 
+        if not calculator.continue_calculation():
+         break
     else:
         print("\U0001F6A7 \033[31mINVALID INPUT!\033[0m")
 greeting.print_goodbye_message()
