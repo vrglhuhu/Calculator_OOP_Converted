@@ -80,4 +80,15 @@ class Calculator:
             print("\U0001F6A7 \033[31mINVALID INPUT. Please enter an integer or a non-zero number.\033[0m")
 
     # Ask the user if they want to perform another calculation
+    def continue_calculation(self):
+        next_calculation = input("\U0001F4CC \033[40m\033[33mDo you want to perform another calculation?\033[0m \033[40m\033[34mYES\033[0m or \033[40m\033[34mNO:\033[0m ")
+        if next_calculation.upper() == "YES":
+           return next_calculation
+        
     # Print closing message
+    def print_goodbye_message(self):
+        print("\n\U0001F504\U0001F504 Closing Program... \U0001F504\U0001F504 Thank you!\n")
+        goodbye = pyfiglet.figlet_format("Visit me again", font="puffy")
+        print(goodbye)
+        print("")
+
