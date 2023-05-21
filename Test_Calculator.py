@@ -2,12 +2,13 @@
 # Calculator_OOP_Converted
 
 from Calculator_OOP_Converted import Calculator
-from greetings import greeting
+from greetings import Greeting
 
-greeting = greeting()
+greeting = Greeting()
 calculator = Calculator()
 
 greeting.print_welcome_message()
+
 while True:
     choice = calculator.get_user_choice()
     if choice in calculator.operations:
@@ -20,7 +21,9 @@ while True:
         else:
            calculator.division() 
         if not calculator.continue_calculation():
-         break
+            print("\033[32mI hope this program helps and satisfy you.\033[0m")
+            break
     else:
-        print("\U0001F6A7 \033[31mINVALID INPUT!\033[0m")
+        print("\U0001F6A7 \033[31mINVALID INPUT!\033[0m\U0001F6A7")
+
 greeting.print_goodbye_message()

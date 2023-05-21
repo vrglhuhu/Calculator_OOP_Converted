@@ -2,7 +2,7 @@
 # Calculator_OOP_Converted
 
 import pyfiglet
-class greeting:
+class Greeting:
     # Make a def for the welcome message
     def print_welcome_message(self):
         print("=" * 110)
