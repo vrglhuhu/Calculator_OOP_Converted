@@ -8,11 +8,12 @@ class Calculator:
     # Initialize operations dictionary with operation names as keys and corresponding methods as values 
     def __init__(self):
         self.operations = {
-            "a": self.addition,
-            "b": self.subtraction,
-            "c": self.multiplication,
-            "d": self.division
+            "A": self.addition,
+            "B": self.subtraction,
+            "C": self.multiplication,
+            "D": self.division
         }
+        
     # Make a def for the welcome message
     def print_welcome_message(self):
         print("=" * 110)
@@ -33,14 +34,14 @@ class Calculator:
         return choice.upper()
     
     # Perform addition operation and display the result
-    def subtraction(self):
-        print("\U0001F530 \033[40m\033[35mSUBTRACTION OPERATION\033[0m \U0001F530")
+    def addition(self):
+        print("\U0001F530 \033[40m\033[35mADDITION OPERATION\033[0m \U0001F530")
         try:
-            num1 = float(input("\U0001F4E2 \033[40m\033[34mEnter first number that you want to subtract:\033[0m "))
-            num2 = float(input("\U0001F4E2 \033[40m\033[34mEnter second number that you want to subtract:\033[0m "))
-            subtract = num1 - num2
+            num1 = float(input("\U0001F4E2 \033[40m\033[34mEnter first number that you want to add:\033[0m "))
+            num2 = float(input("\U0001F4E2  \033[40m\033[34mEnter second number that you want to add:\033[0m "))
+            add = num1 + num2
             print("\U0001F7E5 TOTAL \U0001F7E5")
-            print(num1, "-", num2, "=", subtract)
+            print(num1, "+", num2, "=", add)
         except ValueError:
             print("\U0001F6A7 \033[31mINVALID INPUT. Please enter a number.\033[0m")
 
@@ -91,4 +92,6 @@ class Calculator:
         goodbye = pyfiglet.figlet_format("Visit me again", font="puffy")
         print(goodbye)
         print("")
+
+
 
