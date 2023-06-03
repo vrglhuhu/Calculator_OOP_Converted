@@ -9,3 +9,4 @@ greeting = InheritGreeting()
 calculator = InheritCalculator()
 ui = InheritUserInterface()
 greeting.print_welcome_message()
+

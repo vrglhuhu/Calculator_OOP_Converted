@@ -15,7 +15,7 @@ class Greeting:
         print("\U0001F6D1 \033[31mPress A: \033[0m Addition")
         print("\U0001F6D1 \033[32mPress B: \033[0m Subtraction")
         print("\U0001F6D1 \033[33mPress C: \033[0m Multiplication")
-        print("\U0001F6D1 \033[34mPress D: \033[0m Division\n")
+        print("\U0001F6D1 \033[34mPress D: \033[0m Division")
     
     # Print closing message
     def print_goodbye_message(self):

@@ -12,7 +12,7 @@ class InheritGreeting(Greeting):
     # Make a def for the welcome message
     def print_welcome_message(self):
         super().print_welcome_message()
-        print("\U0001F6D1 \033[36mPress E: \033[0m Factorial")
+        print("\U0001F6D1 \033[36mPress E: \033[0m Factorial\n")
     
     # Print closing message
     def print_goodbye_message(self):
@@ -22,10 +22,6 @@ class InheritGreeting(Greeting):
 class InheritCalculator(Calculator):
     def __init__(self):
         self.operations = {
-            "A": self.addition,
-            "B": self.subtraction,
-            "C": self.multiplication,
-            "D": self.division,
             "E": self.factorial
         }
 
