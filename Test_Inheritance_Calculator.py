@@ -1,9 +1,9 @@
 # Vergel, Chean Bernard Villanueva
 # Inheritance Calculator
 
-from Inheritance import InheritUserInterface
-from Inheritance import InheritCalculator
-from Inheritance import InheritGreeting
+from Inheritance_UserInterface import InheritUserInterface
+from Inheritance_calculator import InheritCalculator
+from Inheritance_greeting import InheritGreeting
 
 greeting = InheritGreeting()
 calculator = InheritCalculator()
