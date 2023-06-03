@@ -22,6 +22,10 @@ class InheritGreeting(Greeting):
 class InheritCalculator(Calculator):
     def __init__(self):
         self.operations = {
+            "A": self.addition,
+            "B": self.subtraction,
+            "C": self.multiplication,
+            "D": self.division,
             "E": self.factorial
         }
 
