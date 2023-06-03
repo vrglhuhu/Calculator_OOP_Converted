@@ -17,3 +17,15 @@ class InheritGreeting(Greeting):
     # Print closing message
     def print_goodbye_message(self):
         print("\n\U0001F504\U0001F504 Program is now closing... \U0001F504\U0001F504 Thank you!\n")
+
+# Add a new method for calculating factorial
+class InheritCalculator(Calculator):
+    def __init__(self):
+        self.operations = {
+            "A": self.addition,
+            "B": self.subtraction,
+            "C": self.multiplication,
+            "D": self.division,
+            "E": self.factorial
+        }
+
